@@ -1,6 +1,6 @@
 import './App.css';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { NavBar } from '@/components/NavBar';
 import { useDarkMode } from '@/hooks/useDarkMode';
