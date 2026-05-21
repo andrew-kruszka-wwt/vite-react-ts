@@ -26,6 +26,9 @@ function App() {
     }
   };
 
+  // This will cause a TypeScript error - undefinedVariable is not defined
+  console.log(undefinedVariable);
+
   return (
     <div className="App">
       <NavBar currentPath={path} onNavigate={navigate} isDark={isDark} onToggleTheme={toggleTheme} />
