@@ -14,9 +14,6 @@ function App() {
   const [isDark, toggleTheme] = useDarkMode();
   const [path, navigate] = useRouter();
 
-  // Intentional TypeScript error to test CI rebuild
-  const invalidValue: number = "this is a string";
-
   const renderPage = () => {
     switch (path) {
       case '/weather':
