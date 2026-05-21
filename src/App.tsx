@@ -13,6 +13,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [isDark, toggleTheme] = useDarkMode();
   const [path, navigate] = useRouter();
+  const unusedVariable = "this will cause a linting error";
 
   const renderPage = () => {
     switch (path) {
