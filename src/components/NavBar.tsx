@@ -49,6 +49,16 @@ export function NavBar({ currentPath, onNavigate, isDark, onToggleTheme }: NavBa
             👨‍💻 Matt's Page
           </a>
         </li>
+        <li>
+          <a
+            href="#/about"
+            className={`navbar-link${currentPath === '/about' ? ' navbar-link--active' : ''}`}
+            onClick={(e) => handleClick(e, '/about')}
+            aria-current={currentPath === '/about' ? 'page' : undefined}
+          >
+            ℹ️ About
+          </a>
+        </li>
       </ul>
       <div className="navbar-actions">
         <ThemeToggle isDark={isDark} onToggle={onToggleTheme} />
