@@ -14,9 +14,6 @@ function App() {
   const [isDark, toggleTheme] = useDarkMode();
   const [path, navigate] = useRouter();
 
-  // Intentional type error to fail CI checks
-  const invalidValue: string = 123;
-
   const renderPage = () => {
     switch (path) {
       case '/weather':
