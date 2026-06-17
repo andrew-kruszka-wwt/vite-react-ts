@@ -13,6 +13,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [isDark, toggleTheme] = useDarkMode();
   const [path, navigate] = useRouter();
+  const unusedVariable = 'This will fail CI checks';
 
   const renderPage = () => {
     switch (path) {
