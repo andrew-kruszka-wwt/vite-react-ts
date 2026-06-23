@@ -7,6 +7,7 @@ import { useDarkMode } from '@/hooks/useDarkMode';
 import { useRouter } from '@/hooks/useRouter';
 import { HomePage } from '@/pages/HomePage';
 import { MattPage } from '@/pages/MattPage';
+import { PortfolioPage } from '@/pages/PortfolioPage';
 import { WeatherPage } from '@/pages/WeatherPage';
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
         return <WeatherPage />;
       case '/matt':
         return <MattPage />;
+      case '/portfolio':
+        return <PortfolioPage />;
       case '/':
       default:
         return <HomePage count={count} onIncrement={() => setCount((c) => c + 1)} />;
